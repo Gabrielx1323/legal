@@ -51,7 +51,7 @@ function animarbotao(cor) {
     botao.classList.add("pressed")
     setTimeout(() => {
         botao.classList.remove("pressed")
-    }, 300);
+    }, 200);
     
 }
 
@@ -82,7 +82,7 @@ function testaresposta(nivelatual) {
         if (botoesclicados.length === sequenciajogo.length) {
             setTimeout(() => {
                 proximasequencia()
-            }, 100);
+            }, 200);
         let pt = nivel * 10 
         pts.textContent = `Pontos = ${pt}`
         }
