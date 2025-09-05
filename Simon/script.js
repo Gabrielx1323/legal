@@ -17,6 +17,16 @@ function iniciarjogo() {
     }
 }
 
+function começar() {
+    if (!jogoiniciado) {
+        jogoiniciado = true
+        nivel = 0
+        botoesclicados = []
+        sequenciajogo = []
+        proximasequencia()
+    }
+}
+
 document.addEventListener("keydown", iniciarjogo)
 
 function proximasequencia() {
@@ -41,7 +51,7 @@ function animarbotao(cor) {
     botao.classList.add("pressed")
     setTimeout(() => {
         botao.classList.remove("pressed")
-    }, 200);
+    }, 300);
     
 }
 
